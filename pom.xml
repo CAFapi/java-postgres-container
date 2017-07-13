@@ -101,6 +101,12 @@
         </developer>
     </developers>
 
+    <properties>
+        <dockerHubOrganization>cafapi</dockerHubOrganization>
+        <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
+        <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -150,7 +156,7 @@
                     <images>
                         <image>
                             <alias>java-postgres</alias>
-                            <name>cafinternal/prereleases:java-postgres-${project.version}</name>
+                            <name>${dockerCafApiOrg}java-postgres${dockerProjectVersion}</name>
                             <build>
                                 <from>postgres:9.4.10-alpine</from>
                                 <labels>
