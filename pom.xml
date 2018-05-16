@@ -105,6 +105,7 @@
         <dockerHubOrganization>cafapi</dockerHubOrganization>
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
+        <gitRepo>https://github.com/CAFapi/java-postgres-container</gitRepo>
     </properties>
 
     <build>
@@ -162,6 +163,7 @@
                                 <labels>
                                     <Build.Number>${project.version}</Build.Number>
                                     <Build.Date>${maven.build.timestamp}</Build.Date>
+                                    <Git.Repo>${gitRepo}</Git.Repo>
                                     <Git.Branch>${git.branch}</Git.Branch>
                                     <Git.Commit>${git.revision}</Git.Commit>
                                 </labels>
@@ -206,7 +208,7 @@
     <scm>
         <connection>scm:git:https://github.com/CAFapi/java-postgres-container.git</connection>
         <developerConnection>scm:git:https://github.com/CAFapi/java-postgres-container.git</developerConnection>
-        <url>https://github.com/CAFapi/java-postgres-container</url>
+        <url>${gitRepo}</url>
     </scm>
     
 </project>
