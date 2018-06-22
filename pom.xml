@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2015-2017 Hewlett Packard Enterprise Development LP.
+    Copyright 2017-2018 Micro Focus or one of its affiliates.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -25,10 +25,12 @@
     <description>A Docker container with PostgreSQL 9.4 and the Java 8 runtime environment installed.</description>
     <url>https://github.com/CAFapi/java-postgres-container</url>
 
+    <inceptionYear>2017</inceptionYear>
+
     <parent>
         <groupId>com.github.cafapi</groupId>
-        <artifactId>caf-common</artifactId>
-        <version>1.12.0-232</version>
+        <artifactId>caf-common-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <groupId>com.github.cafapi</groupId>
@@ -102,6 +104,8 @@
     </developers>
 
     <properties>
+        <copyrightYear>2018</copyrightYear>
+        <copyrightNotice>Copyright ${project.inceptionYear}-${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
         <dockerHubOrganization>cafapi</dockerHubOrganization>
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
