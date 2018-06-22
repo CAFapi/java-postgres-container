@@ -106,6 +106,7 @@
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
         <gitRepo>https://github.com/CAFapi/java-postgres-container</gitRepo>
+        <withWebProxy>http_proxy=${env.HTTP_PROXY} https_proxy=${env.HTTPS_PROXY} no_proxy=${env.NO_PROXY}</withWebProxy>
     </properties>
 
     <build>
@@ -169,7 +170,7 @@
                                 </labels>
                                 <optimise>false</optimise>
                                 <runCmds>
-                                    <runCmd>apk --update add openjdk8-jre</runCmd>
+                                    <runCmd>${withWebProxy} apk --update add openjdk8-jre</runCmd>
                                 </runCmds>
                             </build>
                             <run>
