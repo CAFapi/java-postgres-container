@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2017-2018 Micro Focus or one of its affiliates.
+    Copyright 2017-2020 Micro Focus or one of its affiliates.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -52,24 +52,9 @@
             <email>andrew.reid@hpe.com</email>
         </developer>
         <developer>
-            <id>arogan92</id>
-            <name>Adam Rogan</name>
-            <email>adam.pau.rogan@hpe.com</email>
-        </developer>
-        <developer>
             <id>dermot-hardy</id>
             <name>Dermot Hardy</name>
             <email>dermot.hardy@hpe.com</email>
-        </developer>
-        <developer>
-            <id>glucy</id>
-            <name>Gregory Lucy</name>
-            <email>gregory.lucy@hpe.com</email>
-        </developer>
-        <developer>
-            <id>kploch</id>
-            <name>Krzysztof Ploch</name>
-            <email>krzysztof.ploch@hpe.com</email>
         </developer>
         <developer>
             <id>michael-bryson</id>
@@ -77,35 +62,14 @@
             <email>michael.bryson@hpe.com</email>
         </developer>
         <developer>
-            <id>mmaBel</id>
-            <name>Michael McAlynn</name>
-            <email>michael.mcalynn@hpe.com</email>
-        </developer>
-        <developer>
             <id>mulhollandc</id>
             <name>Connor Mulholland</name>
             <email>connor.mulholland@hpe.com</email>
         </developer>
-        <developer>
-            <id>pcrookshpe</id>
-            <name>Philip Crooks</name>
-            <email>philip.crooks@hpe.com</email>
-        </developer>
-        <developer>
-            <id>trevorgetty</id>
-            <name>Trevor Getty</name>
-            <email>trevor.getty@hpe.com</email>
-        </developer>
-        <developer>
-            <id>zaramckeown</id>
-            <name>Zara McKeown</name>
-            <email>zara.mckeown@hpe.com</email>
-        </developer>
     </developers>
 
     <properties>
-        <copyrightYear>2018</copyrightYear>
-        <copyrightNotice>Copyright ${project.inceptionYear}-${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
+        <copyrightYear>2020</copyrightYear>
         <dockerHubOrganization>cafapi</dockerHubOrganization>
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
