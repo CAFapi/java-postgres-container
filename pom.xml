@@ -22,7 +22,7 @@
     <modelVersion>4.0.0</modelVersion>
     
     <name>Java Postgres Container</name>
-    <description>A Docker container with PostgreSQL 9.4 and the Java 8 runtime environment installed.</description>
+    <description>A Docker container with PostgreSQL 11.7 and the Java 8 runtime environment installed.</description>
     <url>https://github.com/CAFapi/java-postgres-container</url>
 
     <inceptionYear>2017</inceptionYear>
@@ -128,7 +128,7 @@
                             <alias>java-postgres</alias>
                             <name>${dockerCafApiOrg}java-postgres${dockerProjectVersion}</name>
                             <build>
-                                <from>postgres:9.4.10-alpine</from>
+                                <from>postgres:11.7-alpine</from>
                                 <labels>
                                     <Build.Number>${project.version}</Build.Number>
                                     <Build.Date>${maven.build.timestamp}</Build.Date>
