@@ -138,7 +138,7 @@
                                 </labels>
                                 <optimise>false</optimise>
                                 <runCmds>
-                                    <runCmd>${withWebProxy} apk --update add openjdk8-jre</runCmd>
+                                    <runCmd>${withWebProxy} apk --update add openjdk11-jre</runCmd>
                                 </runCmds>
                             </build>
                             <run>
