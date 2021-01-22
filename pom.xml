@@ -73,7 +73,6 @@
         <dockerHubOrganization>cafapi</dockerHubOrganization>
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
-        <gitRepo>https://github.com/CAFapi/java-postgres-container</gitRepo>
         <withWebProxy>http_proxy=${env.HTTP_PROXY} https_proxy=${env.HTTPS_PROXY} no_proxy=${env.NO_PROXY}</withWebProxy>
     </properties>
 
@@ -129,13 +128,6 @@
                             <name>${dockerCafApiOrg}java-postgres${dockerProjectVersion}</name>
                             <build>
                                 <from>${dockerHubPublic}/library/postgres:11-alpine</from>
-                                <labels>
-                                    <Build.Number>${project.version}</Build.Number>
-                                    <Build.Date>${maven.build.timestamp}</Build.Date>
-                                    <Git.Repo>${gitRepo}</Git.Repo>
-                                    <Git.Branch>${git.branch}</Git.Branch>
-                                    <Git.Commit>${git.revision}</Git.Commit>
-                                </labels>
                                 <optimise>false</optimise>
                                 <runCmds>
                                     <runCmd>${withWebProxy} apk --update add openjdk11-jre</runCmd>
@@ -177,7 +169,7 @@
     <scm>
         <connection>scm:git:https://github.com/CAFapi/java-postgres-container.git</connection>
         <developerConnection>scm:git:https://github.com/CAFapi/java-postgres-container.git</developerConnection>
-        <url>${gitRepo}</url>
+        <url>https://github.com/CAFapi/java-postgres-container</url>
     </scm>
     
 </project>
