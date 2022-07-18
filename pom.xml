@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2017-2020 Micro Focus or one of its affiliates.
+    Copyright 2017-2022 Micro Focus or one of its affiliates.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -69,7 +69,7 @@
     </developers>
 
     <properties>
-        <copyrightYear>2020</copyrightYear>
+        <copyrightYear>2022</copyrightYear>
         <dockerHubOrganization>cafapi</dockerHubOrganization>
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
@@ -127,7 +127,7 @@
                             <alias>java-postgres</alias>
                             <name>${dockerCafApiOrg}java-postgres${dockerProjectVersion}</name>
                             <build>
-                                <from>${dockerHubPublic}/library/postgres:11-alpine</from>
+                                <from>${dockerHubPublic}/library/postgres:14-alpine</from>
                                 <optimise>false</optimise>
                                 <runCmds>
                                     <runCmd>${withWebProxy} apk --update add openjdk11-jre</runCmd>
