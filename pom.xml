@@ -130,7 +130,7 @@
                                 <from>${dockerHubPublic}/library/postgres:14-alpine</from>
                                 <optimise>false</optimise>
                                 <runCmds>
-                                    <runCmd>${withWebProxy} apk --update add openjdk11-jre</runCmd>
+                                    <runCmd>${withWebProxy} apk --update add openjdk17-jre</runCmd>
                                 </runCmds>
                             </build>
                             <run>
