@@ -128,7 +128,7 @@
                             <alias>java-postgres</alias>
                             <name>${dockerCafApiOrg}java-postgres${dockerProjectVersion}</name>
                             <build>
-                                <from>${dockerHubPublic}/library/postgres:15.6-alpine</from>
+                                <from>${dockerHubPublic}/library/postgres:16.2-alpine</from>
                                 <optimise>false</optimise>
                                 <runCmds>
                                     <runCmd>${withWebProxy} apk --update add openjdk17-jre</runCmd>
