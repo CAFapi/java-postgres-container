@@ -75,9 +75,19 @@
         <dockerCafApiOrg>${dockerImagePrefix}${dockerHubOrganization}${dockerOrgSeperator}</dockerCafApiOrg>
         <dockerProjectVersion>${dockerVersionSeperator}${project.version}</dockerProjectVersion>
         <withWebProxy>http_proxy=${env.HTTP_PROXY} https_proxy=${env.HTTPS_PROXY} no_proxy=${env.NO_PROXY}</withWebProxy>
+        <projectDockerRegistry>java-postgres-container-${project.version}.project-registries.local</projectDockerRegistry>
     </properties>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.github.cafapi.plugins.docker.versions</groupId>
+                    <artifactId>docker-versions-maven-plugin</artifactId>
+                    <version>1.0.0-SNAPSHOT</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>io.fabric8</groupId>
