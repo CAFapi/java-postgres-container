@@ -146,7 +146,6 @@
                 </executions>
                 <configuration>
                     <verbose>true</verbose>
-                    <autoPull>always</autoPull>
                     <images>
                         <image>
                             <alias>java-postgres</alias>
