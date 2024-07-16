@@ -97,7 +97,7 @@
                     <imageManagement>
                         <image>
                             <repository>${dockerHubPublic}/library/postgres</repository>
-                            <tag>14-alpine</tag>
+                            <tag>16-alpine</tag>
                         </image>
                     </imageManagement>
                 </configuration>
