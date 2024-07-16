@@ -97,7 +97,7 @@
                     <imageManagement>
                         <image>
                             <repository>${dockerHubPublic}/library/postgres</repository>
-                            <tag>14-alpine</tag>
+                            <tag>16-alpine</tag>
                         </image>
                     </imageManagement>
                 </configuration>
@@ -153,7 +153,7 @@
                                 <from>${projectDockerRegistry}/library/postgres</from>
                                 <optimise>false</optimise>
                                 <runCmds>
-                                    <runCmd>${withWebProxy} apk --update add openjdk17-jre</runCmd>
+                                    <runCmd>${withWebProxy} apk --update add openjdk21-jre</runCmd>
                                 </runCmds>
                             </build>
                             <run>
